@@ -23,10 +23,10 @@ export default class InvRow extends Component {
             <tr>
                 <td>{this.props.keyId + 1}</td>
                 <td>{this.props.data.name}</td>
-                <td>{this.props.data.price}</td>
+                <td>$ {this.props.data.price}</td>
                 <td>{JSON.stringify(this.props.data.category)}</td>
                 <td>
-                    <Button variant="outline-primary">
+                    <Button variant="outline-info">
                         {this.props.data.image != "" ? (
                             <Link to={'/image/' + this.props.data.id}>View Image</Link>
                         ) : ("N/A")}

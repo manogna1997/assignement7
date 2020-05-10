@@ -54,49 +54,45 @@ export default function Inventory(props) {
     if (loading) {
         return <div>Loading still ....</div>
     } else {
-        console.log("loading " + prod)
+        console.log("loading -> " + data.products.length)
         return (
-        <Container>
-        <div>
-
-            <div>
-                <h2> {data.products.lenght}</h2>
-            </div>
-            <div>
-                <h3>Showing all available products</h3>
-            </div>
-            <hr />
-            <div>
-                <Table striped bordered hover variant="dark">
-                    <thead>
-                        <tr>
-                            <th>Index</th>
-                            <th>Product Name</th>
-                            <th>Price</th>
-                            <th>Category</th>
-                            <th>Image</th>
-                            <th>Remove</th>
-                            <th>Edit/Update</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {data.products.map((p, i) => { return <InvRow key={i} keyId={i} data={p} remove={removeProd} /> })}
-                    </tbody>
-                </Table>
-            </div>
-            <div>
+            <Container>
                 <div>
-                    <h3>Add a new product to inventory</h3>
+                    <div>
+                        <h3>Showing {data.products.length} available products</h3>
+                    </div>
+                    <hr />
+                    <div>
+                        <Table striped bordered hover variant="dark">
+                            <thead>
+                                <tr>
+                                    <th>Index</th>
+                                    <th>Product Name</th>
+                                    <th>Price</th>
+                                    <th>Category</th>
+                                    <th>Image</th>
+                                    <th>Remove</th>
+                                    <th>Edit/Update</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {data.products.map((p, i) => { return <InvRow key={i} keyId={i} data={p} remove={removeProd} /> })}
+                            </tbody>
+                        </Table>
+                    </div>
+                    <div>
+                        <div>
+                            <h3>Add a new product to inventory</h3>
+                        </div>
+                        <hr />
+                        <div >
+                            <Container fluid>
+                                <AddProduct saveProd={saveProduct} />
+                            </Container>
+                        </div>
+                    </div>
                 </div>
-                <hr />
-                <div >
-                <Container fluid>
-                        <AddProduct saveProd={saveProduct} />
-                    </Container>
-                </div>
-            </div>
-        </div>
-        </Container>
+            </Container>
 
         );
 

@@ -24,14 +24,12 @@ const client = new ApolloClient({
  */
 ReactDOM.render(
     <Container fluid>
-
         <BrowserRouter>
-            <Navbar  bg="dark" expand="lg" variant="dark">
-
+            <Navbar  bg="dark" variant="dark">
                 <Navbar.Brand href="#home">Inventory</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="mr-auto" pullRight>
+                    <Nav className="mr-auto" pullright="true">
                         <ButtonToolbar className="custom-btn-toolbar" pullright="true">
                             <Nav.Link href="">
                                 <LinkContainer to="/">
@@ -61,6 +59,4 @@ ReactDOM.render(
             </ApolloProvider>
 
         </BrowserRouter>
-    </Container>
-
-    , document.getElementById('root'));
+    </Container>, document.getElementById('root'));
