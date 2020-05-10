@@ -11,4 +11,5 @@ Chapter 12 [Advanced Features]
 [My Reflection]
 - Over all i learnt a lot of new thing, especially got a complete picture how a full stack applications are developed, how different frameworks integrate in running the application
 - I wanted to learn Flux patterns but the module didnt had much to saw.
+- Didnt get a chance to work with Google authentication api
 - React was hard to start off when you come from basic html,cc learning but its get very familiars with time and patterns 
