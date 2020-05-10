@@ -1,0 +1,18 @@
+Chapter 10
+- React-Bootstrap
+- React rhas its own way of binding with a 3rd party framework such has bootstrap with react-bootstrap module 
+- This module helps in defining and using bootstrap components has react components that can be imported in the view
+- some of the components components used are Table,Button,Containers etc
+- These bootstrap components organize our page layouts has a Grid or rows and columns.
+- Difficult parts of bootstrap 
+  - CSS properties overlap each other and some times we need to use the browner debugger to see what componets css is uner effect.
+  - A developer needs to map or learn the modules names by hard in memory 
+
+
+
+Chapter 11
+- severe side rendering include build up the html pages at server and posting it to browser.
+- they include adding variables into HTML pages which when rendered will be replaced by sevrer 
+- for example all variables or text that start with syntax ${} are replaced ta severe side.
+- this can be a secured way to transfer any sensitive data between browser and server  
+ 
